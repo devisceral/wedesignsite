@@ -16,10 +16,6 @@ close_icon.onclick = function(){
   menu.style.right = '-320px';
 };
 
-// About us Tab
-// id texto box-text
-// class single-tab
-
 var aboutUs = {
   "Missão": "Fazer com que cada cliente seja reconhecido como autoridade em seu segmento de atuação. Agregar valor ao negócio, potencializar o crescimento das operações e promover e estreitar o relacionamento do cliente com o seu público alvo, por meio da geração de conteúdo de relevância.",
   "Visão": "Ser reconhecida pelos clientes e pelo mercado como uma empresa parceira, inovadora e criativa, que oferece sempre os melhores produtos e soluções em Comunicação Empresarial Integrada.",
@@ -30,7 +26,7 @@ var unselected_color = "#646872";
 var selected_color = "#2A2D34";
 
 var about_tags = document.getElementsByClassName('single-tab');
-
+var box_text = document.getElementById('box-text');
 for (var a = 0; a < about_tags.length; a++){
   
   about_tags[a].onclick = function(){
@@ -43,7 +39,11 @@ for (var a = 0; a < about_tags.length; a++){
 
     this.style['background-color'] = selected_color; 
     this.style['font-weight'] = 'bold';
-    
+
+    var selected = this.innerHTML;
+
+    document.getElementById('box-text').innerHTML = aboutUs[selected];
+  
   }
   
 };
