@@ -17,6 +17,8 @@ close_icon.onclick = function(){
 };
 
 // About us Tab
+// id texto box-text
+// class single-tab
 
 var aboutUs = {
   "Missão": "Fazer com que cada cliente seja reconhecido como autoridade em seu segmento de atuação. Agregar valor ao negócio, potencializar o crescimento das operações e promover e estreitar o relacionamento do cliente com o seu público alvo, por meio da geração de conteúdo de relevância.",
@@ -24,10 +26,20 @@ var aboutUs = {
   "Valores": "<ul><li>Comprometimento</li><li>Inovação</li><li>Ética profissional</li><li>Superação dos resultados</li><li>Melhoria contínua</li></ul>"
 };
 
-var unseletected_color = "#646872";
-var seletected_color = "#2A2D34";
+var unselected_color = "#646872";
+var selected_color = "#2A2D34";
 
+var about_tags = document.getElementsByClassName('single-tab');
 
+for (var a = 0; a < about_tags.length; a++){
+  
+  about_tags[a].onclick = function(){
+    
+    this.style['background-color'] = selected_color; 
+    
+  }
+  
+};
 
 // Slider de serviços
 
