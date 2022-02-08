@@ -27,6 +27,8 @@ var selected_color = "#2A2D34";
 
 var about_tags = document.getElementsByClassName('single-tab');
 var box_text = document.getElementById('box-text');
+box_text.innerHTML = aboutUs['Missão'];
+
 for (var a = 0; a < about_tags.length; a++){
   
   about_tags[a].onclick = function(){
@@ -42,8 +44,8 @@ for (var a = 0; a < about_tags.length; a++){
 
     var selected = this.innerHTML;
 
-    document.getElementById('box-text').innerHTML = aboutUs[selected];
-  
+    box_text.innerHTML = aboutUs[selected];
+
   }
   
 };
