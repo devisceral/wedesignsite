@@ -95,12 +95,6 @@ document.getElementById('service-previous').onclick = function() {
 
 // Funcionalidade botão next ----------------------->
 
-document.getElementById('service-next').onclick = function () {
-
-
-}
-
-
 
 
 
