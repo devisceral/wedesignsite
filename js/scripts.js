@@ -27,7 +27,6 @@ var selected_color = "#2A2D34";
 
 var about_tags = document.getElementsByClassName('single-tab');
 var box_text = document.getElementById('box-text');
-box_text.innerHTML = aboutUs['Missão'];
 
 for (var a = 0; a < about_tags.length; a++){
   
@@ -69,6 +68,39 @@ var our_services = [
   }
   
 ];
+// service-previous
+// service-next
+// service-text
+// service-title
+
+// Funcionalidade botão previous ----------------------->
+
+var current_service = 0;
+
+
+document.getElementById('service-previous').onclick = function() {
+
+  if(current_service == 0){
+
+    var current_service_array = our_services.length -1;
+  }else{
+
+    var current_service_array = current_service -1;
+  }
+
+  document.getElementById('service-text').innerHTML = our_services[current_service].text;
+  document.getElementById('service-title').innerHTML = our_services[current_service].title;
+  current_service = current_service_array;
+}
+
+// Funcionalidade botão next ----------------------->
+document.getElementById('')
+
+
+
+
+
+
 
 
 // Data Footer
