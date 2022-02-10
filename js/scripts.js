@@ -95,8 +95,21 @@ document.getElementById('service-previous').onclick = function() {
 
 // Funcionalidade botão next ----------------------->
 
+document.getElementById('service-next').onclick = function() {
 
+  if(current_service == our_services.length -1){
+   var service_next = 0
+    
+  }else{
+    
+    service_next = current_service +1;
+    
+  }
 
+  document.getElementById('service-text').innerHTML = our_services[service_next].text;
+  document.getElementById('service-title').innerHTML = our_services[service_next].title;
+  current_service = service_next;
+}
 
 
 // Data Footer
