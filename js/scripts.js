@@ -120,7 +120,6 @@ document.getElementById('current_year').innerHTML = current_year;
 
 
 
-
   
    
 
