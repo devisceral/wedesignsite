@@ -114,6 +114,11 @@ document.getElementById('service-next').onclick = function() {
 
 // Data Footer
 
+var current_year = new Date;
+current_year = current_year.getFullYear();
+document.getElementById('current_year').innerHTML = current_year;
+
+
 
 
   
